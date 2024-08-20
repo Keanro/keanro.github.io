@@ -1,0 +1,10 @@
+{% if include.show_projects %}
+<div class="container animate">
+  <div class="row">
+    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% for project in projects %}
+      {% bookshop blog-card post=project %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,12 @@
+{% if include.show_posts %}
+<div class="container animate">
+  <div class="row" data-pagebreak="6">
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% for post in posts %}
+      {% bookshop blog-card post=post %}
+    {% endfor %}
+  </div>
+</div>
+
+{% bookshop_include pagination %}
+{% endif %}
