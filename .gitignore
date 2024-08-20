@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+node_modules
+bookshop-live.js
+.DS_Store
+_inProgress
+old_projects
+README.md
+_screenshot.png
+_testimonials
+images/sample/
