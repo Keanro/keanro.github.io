@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% capture words %}
+{{ content | number_of_words }}
+{% endcapture %}
 <div class="post-top">
   <div class="container">
     <div class="row">
@@ -36,6 +39,8 @@ layout: default
               <div class="post__subtitle">{{ page.subtitle }}</div>
               <!-- <div class="post__author">{{ site.data.author.author_name }}</div> -->
               <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string}}</time>
+              <!-- <i class="fas fa-bookmark"></i>  -->
+              <span class="post__reading-time">Reading Time: {{ words | divided_by: 180 | append: ' mins' }}</span>
             </div>
           </div>
 
