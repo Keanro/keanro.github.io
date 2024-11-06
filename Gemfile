@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "jekyll", "4.3.3"
-# gem 'jekyll-target-blank', "2.0.2"
 gem 'jekyll-toc'
 
 group :jekyll_plugins do
