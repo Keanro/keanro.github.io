@@ -217,7 +217,7 @@
 			padding: 10px;
 			border-radius: 5px;
 			text-align: center;
-			width: 120px;
+			width: 160px;
 			height: 100px;
 			z-index: 20;
 			display: flex;
@@ -228,13 +228,8 @@
 			// top: -20px;
 			// left: -20px;
 		  }
-		
-		  .stat-block-Launches {
-			top: -20px;
-			left: -20px;
-		  }
 
-		  /* Position each block using nth-child */
+		  /* Position each block using nth-of-type */
 		  .stat-block:nth-of-type(1) {
 			top: -20px;
 			left: -20px;
@@ -254,6 +249,11 @@
 			bottom: -20px;
 			right: -20px;
 		  }
+
+		  .stat-block:nth-of-type(5) {
+			top: 45%;
+			left: -20px;
+		  }
 		
 		  .stat-number {
 			font-size: 25px;
@@ -261,7 +261,7 @@
 		  }
 		
 		  .stat-label {
-			font-size: 20px;
+			font-size: 17px;
 			display: block;
 			margin-top: 5px;
 			font-weight: bold;

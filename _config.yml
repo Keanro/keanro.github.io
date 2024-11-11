@@ -58,28 +58,17 @@ tag_permalink_style: /:title
 stats:
   category_stats:
     - name: Launches
-      count: 18
+      count: 12
       color: "#b083f0"
     - name: Migrations
-      count: 30
+      count: 80+
       color: "#60a6ff"
-    - name: Divestitures
-      count: 68
+    - name: Grid Divestitures
+      count: 6
       color: "#ff9bbf"
     - name: Clients
-      count: 28+
+      count: 25+
       color: "#4de3b0"
-
-  # creation_stats:
-  #   - name: Articles
-  #     count: 70
-  #   - name: Book Notes
-  #     count: 16
-  #   - name: Digital Products
-  #     count: 9
-  #   - name: GitHub Repos
-  #     count: 2
-  #   - name: Newsletter Editions
-  #     count: 44
-  #   - name: Websites
-  #     count: 3
+    - name: Users Managed
+      count: 1,000,000+
+      color: "#F0838C"
