@@ -182,6 +182,7 @@
 		width: 480px;
 		height: 520px;
 		margin-left: auto;
+		overflow: visible;
 
 		&::before {
 			content: "";
@@ -208,5 +209,62 @@
 			transition: inherit;
 			background: $blue-gray;
 		}
+
+		// [class^="stat-block"] {
+		.stat-block {
+			position: absolute;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			text-align: center;
+			width: 160px;
+			height: 100px;
+			z-index: 20;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+			// top: -20px;
+			// left: -20px;
+		  }
+
+		  /* Position each block using nth-of-type */
+		  .stat-block:nth-of-type(1) {
+			top: -20px;
+			left: -20px;
+		  }
+		
+		  .stat-block:nth-of-type(2) {
+			top: -20px;
+			right: -20px;
+		  }
+		
+		  .stat-block:nth-of-type(3) {
+			bottom: -20px;
+			left: -20px;
+		  }
+		
+		  .stat-block:nth-of-type(4) {
+			bottom: -20px;
+			right: -20px;
+		  }
+
+		  .stat-block:nth-of-type(5) {
+			top: 45%;
+			left: -20px;
+		  }
+		
+		  .stat-number {
+			font-size: 25px;
+			font-weight: bold;
+		  }
+		
+		  .stat-label {
+			font-size: 17px;
+			display: block;
+			margin-top: 5px;
+			font-weight: bold;
+		  }
 	}
 }

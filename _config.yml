@@ -54,3 +54,21 @@ defaults:
 tag_page_dir: tag
 tag_page_layout: tag_page
 tag_permalink_style: /:title
+
+stats:
+  category_stats:
+    - name: Launches
+      count: 12
+      color: "#b083f0"
+    - name: Migrations
+      count: 80+
+      color: "#60a6ff"
+    - name: Grid Divestitures
+      count: 6
+      color: "#ff9bbf"
+    - name: Clients
+      count: 25+
+      color: "#4de3b0"
+    - name: Users Managed
+      count: 1,000,000+
+      color: "#F0838C"
