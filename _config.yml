@@ -54,3 +54,32 @@ defaults:
 tag_page_dir: tag
 tag_page_layout: tag_page
 tag_permalink_style: /:title
+
+stats:
+  category_stats:
+    - name: Launches
+      count: 18
+      color: "#b083f0"
+    - name: Migrations
+      count: 30
+      color: "#60a6ff"
+    - name: Divestitures
+      count: 68
+      color: "#ff9bbf"
+    - name: Clients
+      count: 28+
+      color: "#4de3b0"
+
+  # creation_stats:
+  #   - name: Articles
+  #     count: 70
+  #   - name: Book Notes
+  #     count: 16
+  #   - name: Digital Products
+  #     count: 9
+  #   - name: GitHub Repos
+  #     count: 2
+  #   - name: Newsletter Editions
+  #     count: 44
+  #   - name: Websites
+  #     count: 3

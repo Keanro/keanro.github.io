@@ -20,9 +20,18 @@
           <div class="{{c}}__right">
             <div class="{{c}}__image">
               <img loading="lazy" src="{{ include.image }}" alt="{{ include.hero_image_alt }}">
+              <!-- Start of dynamic stat blocks -->
+              {% for stat in site.stats.category_stats %}
+              <!-- <div class="stat-block-{{ stat.name}}" style="background-color: {{ stat.color }}"></div>   -->
+              <div class="stat-block" style="background-color: {{ stat.color }}">
+                  <span class="stat-number">{{ stat.count }}</span>
+                  <span class="stat-label">{{ stat.name }}</span>
+                </div>
+              {% endfor %}
+              <!-- End of dynamic stat blocks -->
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
