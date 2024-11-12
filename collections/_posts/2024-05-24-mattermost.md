@@ -5,7 +5,7 @@ subtitle: Kuang Si Waterfall, Luang Prabang, Laos
 description: >-
   Proof of Concept importing data from Mattermost to Slack.
 image: '/images/luang-prabang.jpg'
-tags: [Development, Python]
+tags: [Development]
 featured: false
 ---
 
