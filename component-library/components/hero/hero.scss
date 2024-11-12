@@ -211,60 +211,96 @@
 		}
 
 		// [class^="stat-block"] {
-		.stat-block {
-			position: absolute;
-			color: #fff;
-			padding: 10px;
-			border-radius: 5px;
-			text-align: center;
-			width: 160px;
-			height: 100px;
-			z-index: 20;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			box-sizing: border-box;
-			// top: -20px;
-			// left: -20px;
-		  }
-
-		  /* Position each block using nth-of-type */
-		  .stat-block:nth-of-type(1) {
-			top: -20px;
-			left: -20px;
-		  }
-		
-		  .stat-block:nth-of-type(2) {
-			top: -20px;
-			right: -20px;
-		  }
-		
-		  .stat-block:nth-of-type(3) {
-			bottom: -20px;
-			left: -20px;
-		  }
-		
-		  .stat-block:nth-of-type(4) {
-			bottom: -20px;
-			right: -20px;
-		  }
-
-		  .stat-block:nth-of-type(5) {
-			top: 45%;
-			left: -20px;
-		  }
-		
-		  .stat-number {
-			font-size: 25px;
-			font-weight: bold;
-		  }
-		
-		  .stat-label {
-			font-size: 17px;
-			display: block;
-			margin-top: 5px;
-			font-weight: bold;
-		  }
+			.stat-block {
+				position: absolute;
+				color: #fff;
+				padding: 10px;
+				border-radius: 5px;
+				text-align: center;
+				width: 160px;
+				height: 100px;
+				z-index: 20;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				box-sizing: border-box;
+			
+				/* Position each block using nth-of-type */
+				&:nth-of-type(1) { top: -20px; left: -20px; }
+				&:nth-of-type(2) { top: -20px; right: -20px; }
+				&:nth-of-type(3) { bottom: -20px; left: -20px; }
+				&:nth-of-type(4) { bottom: -20px; right: -20px; }
+				&:nth-of-type(5) { top: 45%; left: -20px; }
+			
+				.stat-number {
+					font-size: 25px;
+					font-weight: bold;
+				}
+				
+				.stat-label {
+					font-size: 17px;
+					display: block;
+					margin-top: 5px;
+					font-weight: bold;
+				}
+			
+				/* Desktop styles */
+				@media only screen and (max-width: $desktop) {
+					width: 140px;
+					height: 90px;
+					padding: 8px;
+			
+					.stat-number {
+						font-size: 22px;
+					}
+					
+					.stat-label {
+						font-size: 15px;
+					}
+				}
+			
+				/* Tablet styles */
+				@media only screen and (max-width: $tablet) {
+					width: 120px;
+					height: 80px;
+					padding: 6px;
+			
+					&:nth-of-type(1), 
+					&:nth-of-type(2) {
+						top: -15px;
+					}
+					
+					.stat-number {
+						font-size: 20px;
+					}
+			
+					.stat-label {
+						font-size: 14px;
+					}
+				}
+			
+				/* Mobile styles */
+				@media only screen and (max-width: $mobile) {
+					width: 90px;
+					height: 40px;
+					padding: 5px;
+					border-radius: 100px;
+					margin: 5px;
+			
+					&:nth-of-type(1), 
+					&:nth-of-type(2) {
+						top: -10px;
+					}
+			
+					.stat-number {
+						font-size: 10px;
+					}
+			
+					.stat-label {
+						font-size: 8px;
+					}
+				}
+			}			
 	}
 }
