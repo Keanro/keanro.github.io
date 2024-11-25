@@ -58,7 +58,7 @@ tag_permalink_style: /:title
 stats:
   category_stats:
     - name: Launches
-      count: 12
+      count: 14
       color: "#b083f0"
     - name: Migrations
       count: 80+
