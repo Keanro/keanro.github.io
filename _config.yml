@@ -63,8 +63,8 @@ stats:
     - name: Migrations
       count: 80+
       color: "#60a6ff"
-    - name: Grid Divestitures
-      count: 6
+    - name: Grid/B+ Divestitures
+      count: 8
       color: "#ff9bbf"
     - name: Clients
       count: 25+
