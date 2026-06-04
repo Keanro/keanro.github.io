@@ -29,5 +29,8 @@
   },
   "dependencies": {
     "@bookshop/generate": "^3.18.2"
+  },
+  "overrides": {
+    "liquidjs": "^10.26.0"
   }
 }
