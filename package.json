@@ -31,6 +31,10 @@
     "@bookshop/generate": "^3.18.2"
   },
   "overrides": {
-    "liquidjs": "^10.26.0"
+    "liquidjs": "^10.26.0",
+    "ws": "^7.5.11",
+    "shell-quote": "^1.8.4",
+    "svelte": "^5.55.7",
+    "esbuild": "^0.25.0"
   }
 }
